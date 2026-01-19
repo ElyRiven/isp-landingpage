@@ -1,0 +1,51 @@
+<!-- ==================== COVERAGE PAGE ==================== -->
+<section id="coverage" class="page-section fade-in py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-10">
+      <h1 class="text-4xl font-extrabold text-gray-900">Mapa de Cobertura</h1>
+      <p class="mt-4 text-xl text-gray-600">
+        Estamos expandiendo nuestra red de fibra óptica cada día.
+      </p>
+    </div>
+
+    <!-- Fake Map Container -->
+    <div
+      class="map-container w-full h-96 rounded-2xl shadow-inner mb-10 flex items-center justify-center relative"
+    >
+      <div class="bg-white/90 p-6 rounded-xl shadow-lg text-center backdrop-blur-sm">
+        <i-lucide [img]="icons.mapPin" size="48" class="text-accent mx-auto mb-2 block"></i-lucide>
+        <h3 class="text-xl font-bold">Verifica tu sector</h3>
+        <p class="mb-4">Ingresa tu dirección para validar factibilidad técnica.</p>
+        <div class="flex">
+          <input
+            type="text"
+            placeholder="Tu ciudad o sector..."
+            class="border border-gray-300 rounded-l-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-primary"
+          />
+          <button class="bg-primary text-white px-4 py-2 rounded-r-lg hover:bg-blue-700">
+            Buscar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-4 bg-white rounded-lg shadow border-l-4 border-secondary">
+        <h4 class="font-bold text-lg">Norte</h4>
+        <p class="text-sm text-gray-500">Cobertura Total</p>
+      </div>
+      <div class="p-4 bg-white rounded-lg shadow border-l-4 border-secondary">
+        <h4 class="font-bold text-lg">Centro</h4>
+        <p class="text-sm text-gray-500">Cobertura 90%</p>
+      </div>
+      <div class="p-4 bg-white rounded-lg shadow border-l-4 border-secondary">
+        <h4 class="font-bold text-lg">Sur</h4>
+        <p class="text-sm text-gray-500">En expansión</p>
+      </div>
+      <div class="p-4 bg-white rounded-lg shadow border-l-4 border-secondary">
+        <h4 class="font-bold text-lg">Valles</h4>
+        <p class="text-sm text-gray-500">Próximamente</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+  <front-navbar />
+
+  <!-- CONTENT WRAPPER (Padding for fixed header) -->
+  <main class="pt-20 grow">
+    <router-outlet />
+  </main>
+
+  <front-footer />
+
+  <!-- WhatsApp Button -->
+  <a
+    href="#"
+    class="fixed bottom-6 right-6 size-15 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 transition transform hover:scale-110 flex items-center justify-center"
+  >
+    <i-lucide [img]="icons.messageCircle" size="32"></i-lucide>
+  </a>
+</body>

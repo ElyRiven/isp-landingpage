@@ -1,0 +1,110 @@
+<!-- ==================== HOME PAGE ==================== -->
+<section id="home" class="page-section fade-in">
+  <!-- Hero Section -->
+  <div class="relative bg-primary overflow-hidden">
+    <div class="absolute inset-0">
+      <img
+        class="w-full h-full object-cover opacity-20"
+        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+        alt="Fibra Óptica"
+      />
+      <div
+        class="absolute inset-0 bg-linear-to-r from-primary to-transparent mix-blend-multiply"
+      ></div>
+    </div>
+    <div
+      class="relative max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-center min-h-150"
+    >
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white sm:text-5xl mb-6">
+        Velocidad que<br />
+        <span class="text-secondary">mueve tu mundo</span>
+      </h1>
+      <p class="mt-4 text-xl text-gray-200 max-w-2xl mb-8">
+        Navega, juega y trabaja sin interrupciones con nuestra Fibra Óptica 100% dedicada. Planes
+        diseñados para hogares y empresas.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a
+          routerLink="/planes"
+          class="bg-accent hover:bg-orange-600 text-white text-lg px-8 py-3 rounded-full font-bold shadow-lg transition transform hover:scale-105 flex items-center justify-center"
+        >
+          <p>Ver Planes</p>
+          <i-lucide
+            [img]="icons.arrowRight"
+            size="20"
+            class="ml-2 flex items-center justify-center"
+          ></i-lucide>
+        </a>
+        <a
+          routerLink="/contacto"
+          class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-3 rounded-full font-bold transition flex items-center justify-center"
+        >
+          Contactar Asesor
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-base text-secondary font-semibold tracking-wide uppercase">
+          ¿Por qué nosotros?
+        </h2>
+        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          La mejor experiencia de conectividad
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div
+          class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center hover:shadow-xl transition duration-300"
+        >
+          <div class="inline-flex items-center justify-center p-3 bg-blue-100 rounded-full mb-5">
+            <i-lucide [img]="icons.zap" size="32" class="text-primary"></i-lucide>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Ultra Velocidad</h3>
+          <p class="text-gray-600">
+            Tecnología de fibra óptica directa a tu hogar (FTTH) para una conexión estable y rápida.
+          </p>
+        </div>
+        <div
+          class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center hover:shadow-xl transition duration-300"
+        >
+          <div class="inline-flex items-center justify-center p-3 bg-blue-100 rounded-full mb-5">
+            <i-lucide [img]="icons.headphones" size="32" class="text-primary"></i-lucide>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Soporte 24/7</h3>
+          <p class="text-gray-600">
+            Equipo técnico local listo para atender tus requerimientos en cualquier momento.
+          </p>
+        </div>
+        <div
+          class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center hover:shadow-xl transition duration-300"
+        >
+          <div class="inline-flex items-center justify-center p-3 bg-blue-100 rounded-full mb-5">
+            <i-lucide [img]="icons.shieldCheck" size="32" class="text-primary"></i-lucide>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Sin Permanencia</h3>
+          <p class="text-gray-600">
+            Confianza total en nuestro servicio. Contrata sin ataduras ni letras pequeñas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Plans Preview (CTA) -->
+  <div class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">¿Listo para volar?</h2>
+      <p class="text-gray-400 mb-8">Descubre el plan perfecto para ti y tu familia.</p>
+      <a
+        routerLink="/planes"
+        class="bg-secondary hover:bg-blue-400 text-white px-8 py-3 rounded-full font-bold transition"
+      >
+        Ver Todos los Planes
+      </a>
+    </div>
+  </div>
+</section>
